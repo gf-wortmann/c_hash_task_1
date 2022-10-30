@@ -1,8 +1,8 @@
-﻿//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-////
-//entering block/////////////
-int intN1; 
-string strResult = "Нет";
+﻿//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N..
+//
+//
+//entering block/////////////а
+int intN1, intResult=2; 
 //
 Console.Clear();
 Console.Write("Введите число ");
@@ -13,11 +13,16 @@ intN1 = int.Parse(Console.ReadLine()!);
 //
 //exec block
 //
-if (intN1%2==0)
+if (intN1 >= 2)
+{  
+while (intResult <= intN1)
 {
-    strResult = "Да";
+    Console.WriteLine($"{intResult}");
+    intResult = intResult + 2;
 }
-
-Console.WriteLine($"{strResult}");
+} else
+{
+    Console.WriteLine($"слишком малое число...");
+}
 //
 // end of exec block
