@@ -13,7 +13,7 @@ intN1 = int.Parse(Console.ReadLine()!);
 //
 //exec block
 //
-if (intN1 >= 2)
+if (intN1 > 2)
 {  
 while (intResult <= intN1)
 {
